@@ -2,7 +2,7 @@ class CreateTransactions < ActiveRecord::Migration
   def change
     create_table :transactions do |t|
       t.string :txnid
-      t.string :booking_id
+      t.string :bookingid
       t.float :amount
       t.string :productinfo
       t.string :firstname
@@ -14,6 +14,7 @@ class CreateTransactions < ActiveRecord::Migration
       t.string :state
       t.string :country
       t.string :zipcode
+      t.string :referralcode
       t.integer :status_id
 
       t.timestamps null: false
